@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: {{ .Release.Namespace }}
+  name: {{ .Release.Name }}-config
+data:
+  PORT: "{{ .Values.PORT }}"
+  URL_PATH: "{{ .Values.AUTH_URL_PATH }}"
+  POSTGRES_HOST: "{{ .Values.POSTGRES_HOST }}"
+  POSTGRES_PORT: "{{ .Values.POSTGRES_PORT }}"
+  POSTGRES_DB: "{{ .Values.POSTGRES_DB }}"
+  POSTGRES_USER: "{{ .Values.POSTGRES_USER }}"
+  POSTGRES_PASSWORD: "{{ .Values.POSTGRES_PASSWORD }}"
+  LOG_LEVEL: "{{ .Values.LOG_LEVEL }}"

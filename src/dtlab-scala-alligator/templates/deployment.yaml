@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values: 
+                    - {{ .Release.Name }}
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: "authz-verify-proxy"
+        image: {{ .Values.auth_image.repository }}:{{ .Values.auth_image.tag }}
+        envFrom:
+        - configMapRef:
+            name: {{ .Release.Name }}-auth-config
+        resources:
+          limits:
+            memory: "256Mi"
+          requests:
+            memory: "128Mi"
+            cpu: "105m"
+        readinessProbe:
+          httpGet:
+            path: /observe
+            port: auth
+        livenessProbe:
+          httpGet:
+            path: /fitness
+            port: auth
+        ports:
+        - name: auth
+          containerPort: {{ .Values.AUTH_PORT }}
+          protocol: TCP
+      - name: {{ .Release.Name }}
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        envFrom:
+        - configMapRef:
+            name: {{ .Release.Name }}-config
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        resources:
+          limits:
+            memory: "512Mi"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+        readinessProbe:
+          httpGet:
+            path: /observe
+            port: app
+        livenessProbe:
+          httpGet:
+            path: /fitness
+            port: app
+        ports:
+        - name: app
+          containerPort: {{ .Values.PORT }}
+          protocol: TCP
