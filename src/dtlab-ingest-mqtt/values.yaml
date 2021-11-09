@@ -1,0 +1,15 @@
+image:
+  repository: dtlaboratory/dtlab-ingest-mqtt
+  tag: v0.1.1
+
+PORT: 8080
+DTLAB_INGEST_PATHS: "http://dtlab-ingest-scala-alligator:8082/dtlab-alligator/ingest/telemetry/CHANGEME http://dtlab-ingest-scala-alligator:8082/dtlab-alligator/ingest/array/CHANGEME"
+KEYSTORE_PASSWORD: "CHANGEME"
+KEYSTORE_PATH: "/mnt/secrets/client.jks"
+KEYSTORE_DATA: "CHANGEME"
+MQTT_URL: "ssl://CHANGE.ME.com:12345"
+WEBHOOK_TIMEOUT_SECONDS: 5
+LOG_LEVEL: "info"
+SYS_LOG_LEVEL: "info"
+affinity: "mqtt"
+

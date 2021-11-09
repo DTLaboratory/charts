@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: {{ .Release.Namespace }}
+  name: {{ .Release.Name }}-config
+data:
+  PORT: "{{ .Values.PORT }}"
+  DTLAB_INGEST_PATHS: "{{ .Values.DTLAB_INGEST_PATHS }}"
+  KEYSTORE_PATH: "{{ .Values.KEYSTORE_PATH }}"
+  MQTT_URL: "{{ .Values.MQTT_URL }}"
+  WEBHOOK_TIMEOUT_SECONDS: "{{ .Values.WEBHOOK_TIMEOUT_SECONDS }}"
+  LOG_LEVEL: "{{ .Values.LOG_LEVEL }}"
+  SYS_LOG_LEVEL: "{{ .Values.SYS_LOG_LEVEL }}"
