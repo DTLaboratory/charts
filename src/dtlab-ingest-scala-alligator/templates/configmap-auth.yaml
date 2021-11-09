@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: {{ .Release.Namespace }}
+  name: {{ .Release.Name }}-auth-config
+data:
+  PORT: "{{ .Values.AUTH_PORT }}"
+  URL_PATH: "{{ .Values.AUTH_URL_PATH }}"
+  REMOTE_PORT: "{{ .Values.REMOTE_PORT }}"

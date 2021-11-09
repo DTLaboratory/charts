@@ -1,9 +1,19 @@
 apiVersion: v1
 entries:
+  dtlab-ingest-scala-alligator:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-11-08T16:32:33.682503711-08:00"
+    description: Deploy DtLab Ingest Scala Alligator Version
+    digest: f842c7410bc36f538afc5b8b06c3972b447191c47fe7f8f9ed5569301b2f1880
+    name: dtlab-ingest-scala-alligator
+    urls:
+    - dtlab-ingest-scala-alligator-0.4.0.tgz
+    version: 0.4.0
   dtlab-scala-alligator:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-11-08T16:24:15.451028441-08:00"
+    created: "2021-11-08T16:32:33.682785451-08:00"
     description: Deploy DtLab Scala Alligator Version
     digest: fd5ace44f75a7c75d5a815f7ed462c3f85b054b1020fcc3294d66d1c59dacabb
     name: dtlab-scala-alligator
@@ -13,7 +23,7 @@ entries:
   pineapple:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-11-08T16:24:15.451374079-08:00"
+    created: "2021-11-08T16:32:33.683183506-08:00"
     description: A Helm chart for Kubernetes
     digest: 55573bb7d6cffe0753b6bfd79975dc018b7bca84362eeca99c451712d5fa740e
     name: pineapple
@@ -21,4 +31,4 @@ entries:
     urls:
     - pineapple-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-08T16:24:15.450681797-08:00"
+generated: "2021-11-08T16:32:33.678405487-08:00"

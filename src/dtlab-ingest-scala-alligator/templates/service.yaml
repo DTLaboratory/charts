@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  namespace: {{ .Release.Namespace }}
+  name: {{ .Release.Name }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8080
+      targetPort: 8080
+      name: http
+    - port: 8082
+      targetPort: 8082
+      name: tcp
+  selector:
+    app: {{ .Release.Name }}
