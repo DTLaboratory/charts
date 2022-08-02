@@ -1,6 +1,6 @@
 image:
   repository: dtlaboratory/dtlab-ingest-scala-alligator
-  tag: v0.4.3
+  tag: v0.4.5
 
 auth_image:
   repository: dtlaboratory/authz-verify-proxy
