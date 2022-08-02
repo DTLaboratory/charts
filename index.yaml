@@ -3,7 +3,7 @@ entries:
   dtlab-ingest-mqtt:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-08-01T17:09:25.654689162-07:00"
+    created: "2022-08-01T17:17:56.727048677-07:00"
     description: Deploy DtLab Ingest Mqtt Connector
     digest: 568f2e29d25f0126961f216cb848355fe15988e009b623327ff5d56ec5799c40
     name: dtlab-ingest-mqtt
@@ -13,7 +13,7 @@ entries:
   dtlab-ingest-scala-alligator:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-08-01T17:09:25.654882389-07:00"
+    created: "2022-08-01T17:17:56.727230955-07:00"
     description: Deploy DtLab Ingest Scala Alligator Version
     digest: c396fc1b655a3903be1ed26dd7325bb8ac3ccab786be9b1afe4a6823d1622ad6
     name: dtlab-ingest-scala-alligator
@@ -23,7 +23,7 @@ entries:
   dtlab-scala-alligator:
   - apiVersion: v1
     appVersion: 0.8.12-alpha
-    created: "2022-08-01T17:09:25.655568367-07:00"
+    created: "2022-08-01T17:17:56.728073934-07:00"
     description: Deploy DtLab Scala Alligator Version
     digest: 5ce52ece00f159635a8ad09d75ed14c0e9d968352576db3da4243b9e19dbe91c
     name: dtlab-scala-alligator
@@ -32,7 +32,7 @@ entries:
     version: 0.8.12-alpha
   - apiVersion: v1
     appVersion: 0.8.11-alpha
-    created: "2022-08-01T17:09:25.655396739-07:00"
+    created: "2022-08-01T17:17:56.727913042-07:00"
     description: Deploy DtLab Scala Alligator Version
     digest: 77c0aa9a14e429bd616dced20ddfc121fdb119edb185472b5cc76a9c401202c3
     name: dtlab-scala-alligator
@@ -40,8 +40,17 @@ entries:
     - dtlab-scala-alligator-0.8.11-alpha.tgz
     version: 0.8.11-alpha
   - apiVersion: v1
+    appVersion: 0.8.10
+    created: "2022-08-01T17:17:56.727757645-07:00"
+    description: Deploy DtLab Scala Alligator Version
+    digest: fc5eb56d696d9f0652b3545cc0354a13b75966f6f0b0bdda10e717e016d7ad44
+    name: dtlab-scala-alligator
+    urls:
+    - dtlab-scala-alligator-0.8.10.tgz
+    version: 0.8.10
+  - apiVersion: v1
     appVersion: 0.8.10-alpha
-    created: "2022-08-01T17:09:25.65522517-07:00"
+    created: "2022-08-01T17:17:56.727589253-07:00"
     description: Deploy DtLab Scala Alligator Version
     digest: b0943126879609c8dc65c8851aa765c421546e03deb617a11fe5127ed96191e8
     name: dtlab-scala-alligator
@@ -50,7 +59,7 @@ entries:
     version: 0.8.10-alpha
   - apiVersion: v1
     appVersion: 0.8.9
-    created: "2022-08-01T17:09:25.65572145-07:00"
+    created: "2022-08-01T17:17:56.728225563-07:00"
     description: Deploy DtLab Scala Alligator Version
     digest: dc11f26e9c0c49d3e08a92d252959511bdba4d30f7adef5d878595bdaa022b84
     name: dtlab-scala-alligator
@@ -59,11 +68,11 @@ entries:
     version: 0.8.9
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-08-01T17:09:25.655054999-07:00"
+    created: "2022-08-01T17:17:56.727405918-07:00"
     description: Deploy DtLab Scala Alligator Version
     digest: 295c478c14184a9a27f24eb8e4bb1e1b61565d063ec9b831684bffe149f2d711
     name: dtlab-scala-alligator
     urls:
     - dtlab-scala-alligator-0.8.0.tgz
     version: 0.8.0
-generated: "2022-08-01T17:09:25.654395973-07:00"
+generated: "2022-08-01T17:17:56.726760574-07:00"
