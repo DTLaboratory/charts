@@ -1,9 +1,9 @@
 image:
-  repository: dtlaboratory/dtlab-ingest-scala-alligator
+  repository: navicore/dtlab-ingest-scala-alligator
   tag: v0.5.0
 
 auth_image:
-  repository: dtlaboratory/authz-verify-proxy
+  repository: navicore/authz-verify-proxy
   tag: v0.6.1
 
 REMOTE_PORT: 8082
