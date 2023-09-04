@@ -1,6 +1,6 @@
 image:
   repository: dtlaboratory/dtlab-ingest-mqtt
-  tag: v0.1.1
+  tag: v0.1.7
 
 PORT: 8080
 DTLAB_INGEST_PATHS: "http://dtlab-ingest-scala-alligator:8082/dtlab-alligator/ingest/telemetry/CHANGEME http://dtlab-ingest-scala-alligator:8082/dtlab-alligator/ingest/array/CHANGEME"
